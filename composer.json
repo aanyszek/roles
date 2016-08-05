@@ -1,0 +1,23 @@
+{
+    "name": "bunta/roles",
+    "description": "Simplest Roles",
+    "keywords": ["role", "simple", "laravel"],
+    "homepage": "https://bitbucket.org/bunta/roles.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Anyszek",
+            "email": "a.anyszek@linux.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bunta\\Roles\\": "src/"
+        },
+        "classmap": [
+            "tests"
+        ]
+    }
+}
