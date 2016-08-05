@@ -23,12 +23,11 @@ class RolesServiceProvider extends ServiceProvider {
                 ], 'config');
     }
 
-    protected $commands = [
-            // 'Bunta\Generator\Commands\GenerateCrudCommand',
-    ];
-
     public function register() {
-        $this->commands($this->commands);
+        $this->mergeConfigFrom(
+                __DIR__ . '/config/roles.php', 'roles'
+        );
+        
     }
 
 }

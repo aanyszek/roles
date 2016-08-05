@@ -7,7 +7,7 @@ use App;
 trait RolesTrait {
 
     public function roles() {
-        return $this->belongsToMany('Bunta\Roles\Role', 'users_roles');
+        return $this->belongsToMany(config('roles.RolesModel'), config('roles.PivotTable'));
     }
 
     /**
