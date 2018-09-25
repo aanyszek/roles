@@ -7,14 +7,14 @@ Simple add trait to user model to use roles. Contains role middleware.
 ## add to "\config\app.php":
     'providers' => [
         ...
-        Bunta\Roles\RolesServiceProvider::class,
+        Aanyszek\Roles\RolesServiceProvider::class,
         ...
     ],
 
 
 ## add to "\app\User.php":
     ...
-    use \Bunta\Roles\RolesTrait;
+    use \Aanyszek\Roles\RolesTrait;
     ...
 
 # Usage 
@@ -27,11 +27,11 @@ Simple add trait to user model to use roles. Contains role middleware.
 
 ## In seeder:  
 
-        $role = Bunta\Roles\Role::create(['name' => 'admin']);
+        $role = Aanyszek\Roles\Role::create(['name' => 'admin']);
 
         $user = \App\User::create([
                     'name' => 'Administrator',
-                    'email' => 'a.anyszek@gmail.com',
+                    'email' => 'a.anyszek@linux.pl',
                     'password' => bcrypt('adminadmin'),
         ]);
 

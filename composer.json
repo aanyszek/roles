@@ -1,8 +1,8 @@
 {
-    "name": "bunta/roles",
+    "name": "aanyszek/roles",
     "description": "Simplest Roles",
     "keywords": ["role", "simple", "laravel"],
-    "homepage": "https://bitbucket.org/bunta/roles.git",
+    "homepage": "https://bitbucket.org/aanyszek/roles.git",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Bunta\\Roles\\": "src/"
+            "Aanyszek\\Roles\\": "src/"
         },
         "classmap": [
             "tests"
